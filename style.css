@@ -1,0 +1,153 @@
+/* img.full-width {
+    width: 50vw;
+    height:50vw;
+    display: block;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #00004d;
+}
+
+.login_sentance {
+    text-align: center;
+    color: #00004d;
+}
+
+.left-panel {
+    flex: 0.8;
+    overflow: hidden;
+}
+
+.left-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px; */
+}
+
+.logo {
+    width:100px;
+    height:100px;
+}
+
+.right-panel {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+    background-color:hsl(203, 100%, 95%);
+}
+
+
+.login-box {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #d0d0d0;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00004d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #000066;
+}
+
+.forgot {
+    display: block;
+    margin-top: 10px;
+    color: #00004d;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.footer a {
+    color: #00004d;
+    text-decoration: none;
+}
+
+.social-icons i {
+    margin: 5px;
+    font-size: 1.3rem;
+    color: #00004d;
+    transition: transform 0.3s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+    color: #000080;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    flex: none;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .login-box {
+    position: static;
+    transform: none;
+    margin: auto;
+  }
+}
