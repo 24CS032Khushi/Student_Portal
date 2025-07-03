@@ -8,6 +8,7 @@
 body {
   background-color: #f0f4ff;
   min-height: 100vh;
+  color: #00004d;
 }
 
 header {
@@ -44,9 +45,13 @@ nav a:hover {
 .profile-photo {
   height: 200px;
   width: auto;
+  padding-left: 10px;
 }
 
 .profile-container {
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-template-rows: repeat(1,1fr);
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
@@ -55,43 +60,73 @@ nav a:hover {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
-.profile-header {
-  text-align: center;
-  margin-bottom: 25px;
+.profile-left{
+  flex: 1;
+  background-color: rgb(255, 255, 243);
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.profile-header h1 {
-  font-size: 2rem;
-  color: #00004d;
-  margin-bottom: 5px;
+.profile-left button {
+  width:200;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #00004d;
+  color:white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 4px;
 }
 
-.profile-header p {
-  color: #555;
+.profile-left button:hover{
+  background-color: #1a1a80;
 }
 
-.profile-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+
+.profile-right button{
+  width: 70px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #00004d;
+  color:white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 4px;
 }
 
-.profile-card {
-  background-color: #f7faff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+.profile-right button:hover{
+  background-color: #1a1a80;
 }
 
-.profile-card h3 {
-  color: #00004d;
-  font-size: 1rem;
-  margin-bottom: 8px;
+.profile-left h3 , p {
+  padding: 10px;
 }
 
-.profile-card p {
-  color: #333;
-  font-size: 1rem;
+.profile-right{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 243);
+}
+
+.profile-right p{
+  padding: 10px;
+}
+
+.profile-right input[type = "text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
 footer {

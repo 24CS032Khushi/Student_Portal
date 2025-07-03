@@ -36,12 +36,11 @@
   <main class="profile-container">
     <div class="profile-left">
       <img src="student-photo.jpg" alt="Student Photo" class="profile-photo">
-      <h2>Khushi Kapatel</h2>
-      <p>Enrollment No: 24CS032</p>
-      <p>Department: Computer Science</p>
+      <br>
       <button>Edit Profile</button>
-    </div>
-    <div class="profile-right">
+      <!-- <h2>Khushi Kapatel</h2>
+      <p>Enrollment No: 24CS032</p>
+      <p>Department: Computer Science</p> -->
       <h3>Contact Information</h3>
       <p><strong>Email:</strong> khushi@example.com</p>
       <p><strong>Phone:</strong> +91 98765 43210</p>
@@ -52,6 +51,29 @@
       <h3>Academic Details</h3>
       <p><strong>Semester:</strong> 3rd</p>
       <p><strong>Advisor:</strong> Prof. xyz</p>
+
+    </div>
+    <div class="profile-right">
+      <form>
+        <p><strong>
+            <h2>Student's Details</h2>
+          </strong></p>
+        <label for="name">Student Name : </label>
+        <input type="text" value="Khushi Ka.Patel" readonly>
+        <lable for="E_No">Enrollment No : </lable>
+        <input type="text" value="24CS032" readonly>
+        <label for="DOB">DOB : <i class="fas fa-calendar"></i></label>
+        <input type="text" value="20th Jan 2007" readonly>
+        <label for="uni">University : </label>
+        <input type="text" value="Charusat" readonly>
+        <label for="institute">Institute : </label>
+        <input type="text" value="CSPIT" readonly>
+        <label for="Department">Department : </label>
+        <input type="text" value="Computer Science and Engineering" readonly>
+        <label for="sem">Current Sem : </label>
+        <input type="text" value="3" readonly>
+        <button type="submit">Save</button>
+      </form>
     </div>
   </main>
 
