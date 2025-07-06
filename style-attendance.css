@@ -83,114 +83,68 @@ footer a {
 }
 
 .container{
-    width:100%;
-    height: auto;
-    background-color:white;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-}
-
-.stu-info{
     display: grid;
     grid-template-rows: 1fr 7fr;
-    gap: 10px;
-    margin: 20px;
-    background-color: #e0e0e8;
-    padding: 20px;
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);
 }
 
-.part-1{
-    padding-left: 20px;
-    background: #00004d ;
+.title-att{
+    background-color: #00004d;
     color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-.part-2{
-    padding-left: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: white;
+    font-size: large;
     font-weight: bold;
+    padding-left: 10px;
     border: none;
     border-radius: 5px;
+    padding-top: 10px;
 }
 
-.courses{
-    display: grid;
-    grid-template-rows: 1fr 6fr 1fr 8fr;
-    gap: 15px;
-    margin: 20px;
-    background-color: #e0e0e8;
-    padding: 20px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);
-}
-
-.regular-course{
-    padding-left: 20px;
-    background: #00004d ;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-.elective-Course{
-    padding-left: 20px;
-    background: #00004d ;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-.RC-table{
-    border: none;
-    border-radius: 5px;
+.att-table{
+    padding: 15px;
     background-color: white;
-}
-
-.EC-table{
     border: none;
     border-radius: 5px;
-    background-color: white;
 }
 
 table{
     width: 100%;
+    font-size:large;
     border-collapse: collapse;
-    border: none;
-    border-radius: 8px;
     text-align: center;
+    font-weight: bold;
 }
 
-td:nth-child(2) , th:nth-child(2) {
+th {
+    height: 45px;
+    background-color: #555958;
+    color: white;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+td:nth-child(1) , td:nth-child(2) {
     text-align: left;
+    padding-left: 15px;
+}
+
+tr:nth-child(even)
+{
+    background-color: #f0f4ff;
 }
 
 tr{
-    height: 35px;
-    padding: 2px;
-    margin: 5px;
+    height: 30px;
+    cursor: pointer;
 }
+tr :hover{
 
-th{
-    background-color: #a2a2c9;
-    color: white;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9; 
-}
-
-tr:hover{
-  background-color: rgb(177, 177, 246); 
-}
-
+    transform: translateY(-2px);
+ }
 @media(max-width: 600px){
     nav{
         flex-direction: column;

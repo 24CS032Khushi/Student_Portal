@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time-Table</title>
+    <link rel="stylesheet" href="style-time-table.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="LOGO.jpg" alt="logo of university" height="45px" width=auto>
+        </div>
+
+        <nav>
+            <a href="home-page.html">Dashboard</a>
+            <a href="#">Notifications <i class="fas fa-bell"></i></a>
+
+            <div class="dropdown">
+                <a href="#">Menu <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="Profile.html"><i class="fas fa-user"></i> Profile</a>
+                    <a href="Settings.html"><i class="fas fa-cog"></i> Settings</a>
+                    <a href="Course.html"><i class="fas fa-book-open"></i> Course</a>
+                    <a href="index.html"><i class="fas fa-sign-out-alt"></i> Log-out</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="title-tt">
+            <h3>Time-Table (B1 - Batch)</h3>
+        </div>
+        <div class="time-table">
+            <table border="1">
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thuesday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <th>9:10 to 10:10</th>
+                    <td>OOP(ADP)</td>
+                    <td>MATHS(BRP)</td>
+                    <td>MATHS(BRP)</td>
+                    <td>WDF(SRG)</td>
+                    <td>MATHS(BRP)</td>
+                </tr>
+                <tr>
+                    <th>10:10 to 11:10</th>
+                    <td>DSA(VP)</td>
+                    <td>OOP(ADP)</td>
+                    <td>DSA(ART)</td>
+                    <td>DSA(ART)</td>
+                    <td>DSA(VP)</td>
+                </tr>
+                <tr>
+                    <th>11:10 to 12:10</th>
+                    <td colspan="5" id="marged-cols">Break</td>
+                </tr>
+                <tr>
+                    <th>12:10 to 13:10</th>
+                    <td>HS 3RD</td>
+                    <td>DSA LAB (VP)</td>
+                    <td>OOP LAB (BPP)</td>
+                    <td>OOP (ADP)</td>
+                    <td>WDF LAB (DS)</td>
+                </tr>
+                <tr>
+                    <th>13:10 to 14:10</th>
+                    <td>HS 3RD</td>
+                    <td>DSA LAB (VP)</td>
+                    <td>OOP LAB (BPP)</td>
+                    <td>CN (HYY)</td>
+                    <td>WDF LAB (DS)</td>
+                </tr>
+                <tr>
+                    <th>14:10 to 14:20</th>
+                    <td colspan="5"id="marged-cols">Break</td>
+                </tr>
+                <tr>
+                    <th>14:20 to 15:20</th>
+                    <td>CN LAB (BPP)</td>
+                    <td>CN (HYY)</td>
+                    <td>CN (BPP)</td>
+                    <td>WDF LAB (SRG)</td>
+                    <td>CN (BPP)</td>
+                </tr>
+                 <tr>
+                    <th>15:20 to 16:20</th>
+                    <td>CN LAB (BPP)</td>
+                    <td>WDF (SRG)</td>
+                    <td>DSA(VP)</td>
+                    <td>WDF LAB (SRG)</td>
+                    <td>WDF (VYP)</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Student Portal | <a href="#">Terms</a> | <a href="#">Privacy</a>
+    </footer>
+
 </body>
+
 </html>
