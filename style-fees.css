@@ -132,6 +132,7 @@ tr:nth-child(odd){
     background-color: rgb(197, 209, 209);
 }
 
+
 @media(max-width: 600px){
     nav{
         flex-direction: column;

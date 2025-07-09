@@ -144,9 +144,8 @@ tr{
     cursor: pointer;
 }
 
-tr :hover{
-
-    transform: translateY(-2px);
+tr:hover{
+  background-color: rgb(195, 195, 239); 
 }
 @media(max-width: 600px){
     nav{
