@@ -89,7 +89,7 @@ footer a {
     margin: 50px auto;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.20);
     display: grid;
     grid-template-rows: 1fr 5fr;
     gap: 15px;
@@ -112,7 +112,7 @@ footer a {
 }
 
 .fees-table{
-    background-color: #f0f4ff;
+    background-color: white;
 }
 
 table{
@@ -129,7 +129,7 @@ th{
 }
 
 tr:nth-child(odd){
-    background-color: #dadae1;
+    background-color: rgb(197, 209, 209);
 }
 
 @media(max-width: 600px){

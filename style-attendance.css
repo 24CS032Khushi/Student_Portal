@@ -84,8 +84,8 @@ footer a {
 
 .container{
     display: grid;
-    grid-template-rows: 1fr 7fr;
-    max-width: 700px;
+    grid-template-rows: 1fr 6fr;
+    max-width: 900px;
     margin: 30px auto;
     background-color: white;
     border: none;
@@ -94,9 +94,11 @@ footer a {
 }
 
 .title-att{
+    margin: 20px;
+    height: 60px;
     background-color: #00004d;
     color: white;
-    font-size: large;
+    font-size: larger;
     font-weight: bold;
     padding-left: 10px;
     border: none;
@@ -113,6 +115,7 @@ footer a {
 
 table{
     width: 100%;
+    height: 100%;
     font-size:large;
     border-collapse: collapse;
     text-align: center;
@@ -121,7 +124,7 @@ table{
 
 th {
     height: 45px;
-    background-color: #555958;
+    background-color: #00004d;
     color: white;
     font-weight: bold;
     text-decoration:underline;
@@ -134,17 +137,17 @@ td:nth-child(1) , td:nth-child(2) {
 
 tr:nth-child(even)
 {
-    background-color: #f0f4ff;
+    background-color:rgb(197, 209, 209);
 }
 
 tr{
-    height: 30px;
     cursor: pointer;
 }
+
 tr :hover{
 
     transform: translateY(-2px);
- }
+}
 @media(max-width: 600px){
     nav{
         flex-direction: column;
